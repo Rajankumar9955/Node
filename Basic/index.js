@@ -32,14 +32,12 @@
 // }).listen(8000);
 
 
-
-
-// let http=require("http");
-// const bpl=require("./Cybrom")
-// http.createServer((req, res)=>{
-//      res.write("<h2>Hello Raj Malhotra</h2>");
-//       res.write(bpl.Mycollege());
-//       res.write(bpl.course());
-//       res.write(bpl.Fees());
-//      res.end();
-// }).listen(9000);
+let http=require("http");
+const bpl=require("./Cybrom")
+http.createServer((req, res)=>{
+     res.write("<h2>Hello Raj Malhotra</h2>");
+      res.write(bpl.Mycollege());
+      res.write(bpl.course());
+      res.write(bpl.Fees());
+     res.end();
+}).listen(9000);
